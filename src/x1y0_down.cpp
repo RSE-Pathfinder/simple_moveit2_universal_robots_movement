@@ -24,7 +24,7 @@ auto move_group_interface = MoveGroupInterface(node, "ur_manipulator");
 tf2::Quaternion myQuaternion;
 
 double roll   = M_PI * 0.0;
-double pitch  = M_PI * -2/3;
+double pitch  = M_PI * -3/5;
 double yaw    = M_PI * 1.0;
 
 myQuaternion.setRPY(roll, pitch, yaw);
