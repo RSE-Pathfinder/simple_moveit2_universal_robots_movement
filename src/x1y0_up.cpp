@@ -24,17 +24,17 @@ auto move_group_interface = MoveGroupInterface(node, "ur_manipulator");
 tf2::Quaternion myQuaternion;
 
 double roll   = M_PI * 0.0;
-double pitch  = M_PI * 0.0;
-double yaw    = M_PI * -1;
+double pitch  = M_PI * -1/3;
+double yaw    = M_PI * 1.0;
 
 myQuaternion.setRPY(roll, pitch, yaw);
 myQuaternion = myQuaternion.normalize();
 
 // Set a target Pose
 geometry_msgs::msg::Pose msg;
-msg.position.x    = 0.16;
-msg.position.y    = 0.32;
-msg.position.z    = 0.30;
+msg.position.x    = 0.65;
+msg.position.y    = 0.0;
+msg.position.z    = 0.20;
 msg.orientation.w = myQuaternion.getW();
 msg.orientation.x = myQuaternion.getX();
 msg.orientation.y = myQuaternion.getY();

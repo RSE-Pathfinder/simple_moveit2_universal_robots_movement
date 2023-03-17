@@ -93,8 +93,8 @@ def generate_launch_description():
     robot_description_semantic = get_robot_description_semantic()
     demo_node = Node(
         package="hello_moveit_ur",
-        executable="hello_moveit_ur",
-        name="hello_moveit_ur",
+        executable="counter_withdraw",
+        name="counter_withdraw",
         output="screen",
         parameters=[
             robot_description,
